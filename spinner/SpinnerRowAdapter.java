@@ -44,7 +44,7 @@ public class SpinnerRowAdapter extends BaseAdapter {
 
         SpinnerRow cur_obj = objects.get(position);
         LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-        View row = inflater.inflate(R.layout.row_course, parent, false);
+        View row = inflater.inflate(R.layout.row_spinner, parent, false);
         TextView label =  row.findViewById(R.id.title);//position==0
         label.setHintTextColor(Color.GRAY);
         if(cur_obj.getId().equals("0") || cur_obj.getId()=="0")
@@ -64,7 +64,7 @@ public class SpinnerRowAdapter extends BaseAdapter {
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
         SpinnerRow currentObject = objects.get(position);
         LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-        View row = inflater.inflate(R.layout.row_course, parent, false);
+        View row = inflater.inflate(R.layout.row_spinner, parent, false);
         TextView label =  row.findViewById(R.id.title);//position==0
 
         if(currentObject.getId().equals("0") || currentObject.getId()=="0")
