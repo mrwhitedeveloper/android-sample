@@ -1,4 +1,4 @@
-package com.mrwhitedeveloper.android.sample;
+package com.mrwhitedeveloper.android.sample.spinner;
 
 public class SpinnerRow {
     String id,title;
